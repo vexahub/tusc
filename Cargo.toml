@@ -1,0 +1,21 @@
+[package]
+name = "tusc"
+version = "0.0.0"
+edition = "2024"
+rust-version = "1.85"
+description = "A tus resumable upload client written in Rust"
+authors = ["Thomas <tom@unebaguette.fr>"]
+repository = "https://github.com/vexahub/tusc"
+keywords = ["tus", "client"]
+license-file = "LICENSE"
+readme = "README.md"
+
+[dependencies]
+
+[profile.release]
+debug = false
+lto = "fat"
+panic = "abort"
+opt-level = 3
+codegen-units = 1
+strip = true
