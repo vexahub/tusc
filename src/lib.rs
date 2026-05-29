@@ -1,3 +1,6 @@
+// Copyright (c) 2026-present VexaHub and collaborators
+// SPDX-License-Identifier: MIT
+
 use std::path::Path;
 
 use reqwest::header::HeaderMap;
